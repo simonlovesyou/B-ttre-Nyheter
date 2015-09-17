@@ -31,3 +31,6 @@ chrome-plugin/assets
 
 # Debug files
 debug
+
+# Compiled HTML file
+chrome-plugin/popup.html

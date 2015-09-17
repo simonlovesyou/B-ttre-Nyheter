@@ -1,9 +1,8 @@
 {
-	"name": "Aftonbait",
+  "name": "Aftonbait",
   "version": "0.0.1",
   "description": "Chrome extension for filtering clickbait articles.",
   "main": "modules/js/popup.js",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/simonlovesyou/Aftonbait.git"
@@ -22,5 +21,13 @@
   "homepage": "https://github.com/simonlovesyou/Aftonbait",
   "dependencies": {
     "natural": "^0.2.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
