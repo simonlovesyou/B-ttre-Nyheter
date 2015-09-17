@@ -1,0 +1,104 @@
+{
+	"clickbait": [
+		{
+			"title": "Du kommer inte tro vad som hände sen",
+			"paragraph": "Du kommer att börja gråta",
+			"clickbait": true
+		},
+		{
+			"title": "Experten tipsar: Så bränner du fett bäst",
+			"paragraph": "Snabba resultat - \"Riktigt bra fettbrännare\"",
+			"clickbait": true
+		},
+		{
+			"title": "Från tungviktare till totalt superfit",
+			"paragraph": "Salif vägde hela 167 kg Se hur han ser ut nu",
+			"clickbait": true
+		},
+		{
+			"title": "Här avslöjas plötsligt ovanliga vänskapen",
+			"paragraph": "[TV] De lyckas charma alla: inte ett öga torrt",
+			"clickbait": true
+		},
+		{
+			"title": "Tricket: Så somnar du på 1 minut",
+			"paragraph": "Testa hyllade 4-7-8-metoden. Superenkelt",
+			"clickbait": true
+		},
+		{
+			"title": "Sorry Kim, du är inte längre nummer 1",
+			"paragraph": "Gissa vem som nu är störst på Instagram!",
+			"clickbait": true
+		},
+		{
+			"title": "Wow! Dolt från utsidan - drömhem på insidan",
+			"paragraph": "Arkitektparet byggde kamouflerat sommarhus på Gotland KOLLA INNE",
+			"clickbait": true
+		},
+		{
+			"title": "Satsar hårt på att sälja det oväntade",
+			"paragraph": "[TV] Till saul: En liten burkfrån landet. \"Många är redo att bli lurade\"",
+			"clickbait": true
+		},
+		{
+			"title": "Björnens utseende överraskar allihopa",
+			"paragraph": "[TV] Kameramannen fångar det annorlunda på film. \"Nämen, gud!\"",
+			"clickbait": true
+		},
+		{
+			"title": "Kaos i trafiken - då händer det fina",
+			"paragraph": "[TV] Bilisterna kan inte ana vad som händer när frustrationen är som värst"	
+		},
+		{
+			"title": "Värsta som kan hända en surfare?",
+			"paragraph": "[TV] Han filmade de spektuakulära bilderna med sin kamera"	
+		},
+		{
+			"title": "Här hände det som borde vara omöjligt",
+			"paragraph": "[TV] Ingen på stranden kan tro sina ögon. Hur i världen gick det här till?"	
+		}
+	],
+	"nonClickbait": [
+		{
+			"title": "Larmet: Okända hämtar upp barn vid tågstationen",
+			"paragraph": "20 flyktingbarn försvann spårlöst: \"Vi vet inte vad som hänt\""
+		},
+		{
+			"title": "S-politikern: Är min rätt att säga n-order",
+			"paragraph": "20 flyktingbarn försvann spårlöst: \"Vi vet inte vad som hänt\""
+		},
+		{
+			"title": "Explosion vid flerfamiljshus",
+			"paragraph": "Föreningslokal möjlig måltavla. Klassas som \"särskild händelse\""
+		},
+		{
+			"title": "Turister sköts till döds - av misstag",
+			"paragraph": "Föreningslokal möjlig måltavla. Klassas som \"särskild händelse\""
+		},
+		{
+			"title": "Man tände eld på bil med person i",
+			"paragraph": "Ska ha bråkat innan händelsen. Polisen söker gärningsman"
+		},
+		{
+			"title": "Voltade 25 meter - 2 svårt skadade",
+			"paragraph": "Man och kvinna i trafikolycka - förd till sjukhus med helikopter"	
+		},
+		{
+			"title": "Löven: Tuffare gränskontroller är inte aktuellt",
+			"paragraph": "Statsministern om flyktingkrisen: \"Vi har kontroll på situationen\""	
+		},
+		{
+			"title": "Efterlyser man efter överfall i joggingspår",
+			"paragraph": "Statsministern om flyktingkrisen: \"Vi har kontroll på situationen\""	
+		},
+		{
+			"title": "Brand bröt ut i asylboende inatt",
+			"paragraph": "[TV + Text] Räddningstjänsten: Det var kaos när vi kom till platsen"	
+		},
+		{
+			"title": "Marwa berättar 'Därför är jag på flykt från Syrien",
+			"paragraph": "Aftonbladet träffade henne framför taggtråden vid stängda gränsen"	
+		}
+	]
+	
+}
