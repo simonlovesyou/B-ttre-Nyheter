@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           expand: true
         }
       }
-    }
+    },
     cssmin: {
       main: {
         src: 'chrome-plugin/assets/css/plugin.css',
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
           preserveComments: true
         },
         files: {
-          'chrome-plugin/popup.min.js': 'chrome-plugin/popup.js'
+          'chrome-plugin/assets/js/popup.min.js': 'modules/js/popup.js'
         }
       }
     },
@@ -72,15 +72,11 @@ module.exports = function(grunt) {
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-jade');
-  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   //grunt.task.requires()
-  grunt.registerTask('default', ['concat:basic', 'jade:debug', 'jade:release', 
-                      , 'uglify:js', 'cssmin:main', 'cssmin:blog',
-                      'watch']);
+  grunt.registerTask('default', ['jade:debug', 'jade:release', 'uglify:js', 'cssmin:main', 'watch']);
 };
 
 /*
