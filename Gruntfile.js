@@ -41,14 +41,32 @@ module.exports = function(grunt) {
           preserveComments: true
         },
         files: {
-          'chrome-plugin/assets/js/popup.min.js': 'modules/js/popup.js'
+          'chrome-plugin/assets/js/popup.min.js': 'chrome-plugin/assets/js/popup.js'
         }
+      }
+    },
+    concat: {
+      options: {
+        separator: ';',
+      },
+      js: {
+        src: ['modules/js/bundle.js'],
+        dest: 'chrome-plugin/assets/js/popup.js'
+      }
+    },
+    browserify: {
+      extension: {
+        options: {
+          exclude: ['lapack']
+        },
+        src: ['index.js', 'modules/js/popup.js'],
+        dest: 'modules/js/bundle.js'
       }
     },
     watch: {
       scripts: {
         files: ['**/*.js'],
-        tasks: ['concat:js', 'uglify:js'],
+        tasks: ['browserify:extension', 'concat:js', 'uglify:js'],
         options: {
           spawn: false,
         },
@@ -75,8 +93,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-browserify');
+
   //grunt.task.requires()
-  grunt.registerTask('default', ['jade:debug', 'jade:release', 'uglify:js', 'cssmin:main', 'watch']);
+  grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat:js', 'uglify:js', 'cssmin:main', 'watch']);
 };
 
 /*
