@@ -1,15 +1,27 @@
 {
   "manifest_version": 2,
-
   "name": "Aftonbait filter",
-  "description": "This extension will filter the clickbait articles of aftonbladet.se",
   "version": "1.0",
+
+  "description": "This extension will filter the clickbait articles of aftonbladet.se",
+
 
   "browser_action": {
     "default_icon": "assets/images/icon.png",
     "default_popup": "popup.html"
   },
+  "content_scripts": [
+    {
+      "matches": ["*://www.aftonbladet.se/*"],
+      "js": ["assets/js/popup.js"]
+    }
+  ],
   "permissions": [
-    "http://www.aftonbladet.se"
+    "activeTab",
+    "http://www.aftonbladet.se/"
+  ],
+  "web_accessible_resources": [
+    "assets/js/popup.js",
+    "assets/json/testData.json"
   ]
 }
