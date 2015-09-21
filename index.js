@@ -1,8 +1,3 @@
-var mimir = require('mimir'),
-    bow = mimir.bow,
-    dict = mimir.dict;
-var svm = require('node-svm'),
-    clf = new svm.CSVC();
 var fs = require('fs');
 var natural = require('natural'),
     classifier = new natural.BayesClassifier();
