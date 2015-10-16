@@ -1,11 +1,11 @@
 {
-  "name": "Aftonbait",
+  "name": "Bättre Afton",
   "version": "0.0.1",
   "description": "Chrome extension for filtering clickbait articles.",
   "main": "modules/js/popup.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonlovesyou/Aftonbait.git"
+    "url": "https://github.com/simonlovesyou/B-ttre-Afton.git"
   },
   "keywords": [
     "javascript",
@@ -16,9 +16,9 @@
   "author": "Simon Johansson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simonlovesyou/Aftonbait/issues"
+    "url": "https://github.com/simonlovesyou/B-ttre-Afton/issues"
   },
-  "homepage": "https://github.com/simonlovesyou/Aftonbait",
+  "homepage": "https://github.com/simonlovesyou/B-ttre-Afton",
   "dependencies": {
     "natural": "^0.2.1"
   },
