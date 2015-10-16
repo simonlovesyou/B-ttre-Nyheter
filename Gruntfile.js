@@ -30,8 +30,8 @@ module.exports = function(grunt) {
     },
     cssmin: {
       main: {
-        src: 'chrome-plugin/assets/css/plugin.css',
-        dest: 'chrome-plugin/assets/css/plugin.min.css'
+        src: 'chrome-plugin/assets/css/settings.css',
+        dest: 'chrome-plugin/assets/css/settings.min.css'
       }
     },
     uglify: {
@@ -40,7 +40,8 @@ module.exports = function(grunt) {
           preserveComments: true
         },
         files: {
-          'chrome-plugin/assets/js/popup.min.js': 'chrome-plugin/assets/js/popup.js'
+          'chrome-plugin/assets/js/inject.min.js': 'chrome-plugin/assets/js/inject.js',
+          'chrome-plugin/assets/js/options.min.js': 'chrome-plugin/assets/js/options.js'
         }
       }
     },
@@ -48,9 +49,17 @@ module.exports = function(grunt) {
       options: {
         separator: ';',
       },
+      css: {
+        src: ['modules/css/settings.css'],
+        dest: 'chrome-plugin/assets/css/settings.css'
+      },
       js: {
         src: ['modules/js/bundle.js', 'node_modules/jquery/dist/jquery.min.js'],
-        dest: 'chrome-plugin/assets/js/popup.js'
+        dest: 'chrome-plugin/assets/js/inject.js'
+      },
+      options_page: {
+        src: ['modules/js/options.js'],
+        dest: 'chrome-plugin/assets/js/options.js'
       }
     },
     browserify: {
@@ -58,7 +67,7 @@ module.exports = function(grunt) {
         options: {
           exclude: ['lapack']
         },
-        src: ['index.js', 'modules/js/popup.js'],
+        src: ['index.js', 'modules/js/inject.js'],
         dest: 'modules/js/bundle.js'
       }
     },
@@ -74,10 +83,16 @@ module.exports = function(grunt) {
         }
       }
     },
+    clean: {
+      build: {
+        src: ["./modules/js/bundle.js", "./chrome-plugin/assets/settings.css", "./chrome-plugin/assets/js/options.js", "./chrome-plugin/assets/js/inject.js"]
+      },
+      bundle: "./modules/js/bundle.js"
+    },
     watch: {
       scripts: {
         files: ['**/*.js'],
-        tasks: ['browserify:extension', 'concat:js', 'uglify:js'],
+        tasks: ['browserify:extension', 'concat:js', 'concat:options_page', 'uglify', 'clean'],
         options: {
           spawn: false,
         },
@@ -95,7 +110,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['**/*.css'],
-        tasks: ['cssmin:main',],
+        tasks: ['concat:css', 'cssmin:main',],
         options: {
           spawn: false,
         },
@@ -111,7 +126,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-jsonmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   //grunt.task.requires()
-  grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat:js', 'uglify:js', 'cssmin:main', 'jsonmin:extension', 'watch']);
+  grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat', 'uglify', 'clean:bundle', 'watch']);
+  grunt.registerTask('deploy', ['jade:release', 'browserify:extension', 'concat', 'uglify', 'cssmin:main', 'jsonmin:extension', 'clean', 'watch']);
 };
