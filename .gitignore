@@ -40,3 +40,6 @@ chrome-plugin/manifest.json
 
 # Compiled bundle.js file
 modules/js/bundle.js
+
+# Zip file of extension
+Bättre_Nyheter.zip
