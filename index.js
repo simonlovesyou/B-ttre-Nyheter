@@ -1,27 +1,30 @@
 var fs = require('fs');
 var natural = require('natural'),
-    classifier = new natural.BayesClassifier();
-var data;
+    classifierHeadline  = new natural.BayesClassifier(),
+    classifierParagraph = new natural.BayesClassifier();
+ 
+window.isClickbait = function(header, paragraph) {
 
-window.isClickbait = function(header) {
-
-  return (classifier.classify(header) === 'true');
+  return (classifierHeadline.classify(header) === 'true' && classifierParagraph.classify(paragraph) === 'true');
 }
 
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
   if(xhr.readyState === 4 && xhr.status === 200) {
-    data = JSON.parse(xhr.responseText);
+    var data = JSON.parse(xhr.responseText);
 
     data.nonClickbait.map(function(article) {
-      classifier.addDocument(article.title + " " + article.paragraph, false);
+      classifierHeadline.addDocument(article.title, false);
+      classifierParagraph.addDocument(article.paragraph, false);
     });
 
     data.clickbait.map(function(article, index) {
-      classifier.addDocument(article.title + " " + article.paragraph, true);
+      classifierHeadline.addDocument(article.title, true);
+      classifierParagraph.addDocument(article.paragraph, true);
     });
 
-    classifier.train();
+    classifierHeadline.train();
+    classifierParagraph.train();
     window.startExtension();
     }
 } 
