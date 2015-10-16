@@ -83,7 +83,7 @@ module.exports = function(grunt) {
         },
       },
       json: {
-        files: ['**/*.json', '!**/assets/**'],
+        files: ['**/*.json', '!**/chrome-plugin/**'],
         tasks: ['jsonmin:extension']
       },
       jade: {
