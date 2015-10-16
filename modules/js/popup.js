@@ -12,7 +12,6 @@ window.startExtension = function() {
 
   articles.each(function(index) {
     var article = $(this);
-
     article.children().each(function(i) {
       var a = $(this);
       //abStreamSmall might be for PLUS articles
