@@ -37,3 +37,6 @@ chrome-plugin/popup.html
 
 # Minified manifest file
 chrome-plugin/manifest.json
+
+# Compiled bundle.js file
+modules/js/bundle.js
