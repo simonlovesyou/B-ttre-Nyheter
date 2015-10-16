@@ -1,11 +1,11 @@
 {
-  "name": "B-ttre-Afton",
-  "version": "0.0.1",
-  "description": "Chrome extension for filtering clickbait articles.",
+  "name": "B-ttre-Nyheter",
+  "version": "1.0.0",
+  "description": "Chrome extension for improving the user experience on Swedish news sites.",
   "main": "modules/js/popup.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonlovesyou/B-ttre-Afton.git"
+    "url": "https://github.com/simonlovesyou/B-ttre-Nyheter.git"
   },
   "keywords": [
     "javascript",
@@ -16,9 +16,9 @@
   "author": "Simon Johansson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simonlovesyou/B-ttre-Afton/issues"
+    "url": "https://github.com/simonlovesyou/B-ttre-Nyheter/issues"
   },
-  "homepage": "https://github.com/simonlovesyou/B-ttre-Afton",
+  "homepage": "https://github.com/simonlovesyou/B-ttre-Nyheter",
   "dependencies": {
     "jquery": "^2.1.4",
     "natural": "^0.2.1"
