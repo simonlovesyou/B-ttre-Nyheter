@@ -1,10 +1,22 @@
 html
   head
     title Aftonbait
-    link(rel="stylesheet", href="assets/css/plugin.css")
-    script(src="assets/js/popup.min.js")
+    //- Use settings.min.css before deploying
+    link(rel="stylesheet", href="assets/css/settings.css")
+    meta(http-equiv="content-type", content="text/html", charset="utf-8")
+    //-script(src="assets/js/popup.min.js")
 
   body
+    #wrapper
+      h1 Bättre Nyheter
+      input(type="checkbox" name="filterBait")
+      p Filter Clickbait
+      input(type="checkbox" name="filterPro")
+      p Filtrera Pro artiklar  
+      input(type="checkbox" name="silent")
+      p Silent
 
-
-
+      #status
+      button(id="save") Spara
+    //- Use options.min.js before deploying
+    script(src="assets/js/options.min.js")
