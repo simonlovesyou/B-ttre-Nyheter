@@ -34,3 +34,6 @@ debug
 
 # Compiled HTML file
 chrome-plugin/popup.html
+
+# Minified manifest file
+chrome-plugin/manifest.json
