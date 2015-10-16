@@ -89,6 +89,19 @@ module.exports = function(grunt) {
       },
       bundle: "./modules/js/bundle.js"
     },
+    compress: {
+      deploy: {
+        options: {
+          archive: 'Bättre_Nyheter.zip'
+        },
+        files: 
+        [
+          {
+            src: ['chrome-plugin/**'], dest: './'
+          }
+        ]
+      }
+    },
     watch: {
       scripts: {
         files: ['**/*.js'],
@@ -127,8 +140,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-jsonmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
   //grunt.task.requires()
   grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat', 'uglify', 'clean:bundle', 'watch']);
-  grunt.registerTask('deploy', ['jade:release', 'browserify:extension', 'concat', 'uglify', 'cssmin:main', 'jsonmin:extension', 'clean', 'watch']);
+  grunt.registerTask('deploy', ['jade:release', 'browserify:extension', 'concat', 'uglify', 'cssmin:main', 'jsonmin:extension', 'clean', 'compress']);
 };
