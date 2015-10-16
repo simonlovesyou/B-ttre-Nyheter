@@ -1,10 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Aftonbait filter",
-  "version": "1.0",
+  "name": "Bättre Nyheter",
+  "version": "1.0.0",
 
-  "description": "This extension will filter the clickbait articles of aftonbladet.se",
+  "description": "Gör Aftonbladet.se till en bättre nyhetssida.",
 
+  "options_ui": {
+    "page": "popup.html",
+    "chrome_style": true
+  },
 
   "browser_action": {
     "default_icon": "assets/images/icon.png",
@@ -13,15 +17,16 @@
   "content_scripts": [
     {
       "matches": ["*://www.aftonbladet.se/"],
-      "js": ["assets/js/popup.js"]
+      "js": ["assets/js/inject.min.js"]
     }
   ],
   "permissions": [
     "activeTab",
+    "storage",
     "http://www.aftonbladet.se/"
   ],
   "web_accessible_resources": [
-    "assets/js/popup.js",
+    "assets/js/inject.min.js",
     "assets/json/testData.min.json"
   ]
 }
