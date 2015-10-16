@@ -63,6 +63,18 @@ module.exports = function(grunt) {
         dest: 'modules/js/bundle.js'
       }
     },
+    jsonmin: {
+      extension: {
+        options: {
+          stripWhitespace: true,
+          stripComments: true
+        },
+        files: {
+          "chrome-plugin/assets/json/testData.min.json" : "testData.json",
+          "chrome-plugin/manifest.json": "manifest.json"
+        }
+      }
+    },
     watch: {
       scripts: {
         files: ['**/*.js'],
@@ -70,6 +82,10 @@ module.exports = function(grunt) {
         options: {
           spawn: false,
         },
+      },
+      json: {
+        files: ['**/*.json', '!**/assets/**'],
+        tasks: ['jsonmin:extension']
       },
       jade: {
         files: ['**/*.jade'],
@@ -95,9 +111,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-jsonmin');
 
   //grunt.task.requires()
-  grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat:js', 'uglify:js', 'cssmin:main', 'watch']);
+  grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat:js', 'uglify:js', 'cssmin:main', 'jsonmin:extension', 'watch']);
 };
 
 /*
@@ -105,5 +122,3 @@ module.exports = function(grunt) {
 grunt concat:css 
 
 # Concat CSS and JS files, but don't do anything else
-grunt concat
-*/
