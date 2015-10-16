@@ -2,48 +2,39 @@
 	"clickbait": [
 		{
 			"title": "Du kommer inte tro vad som hände sen",
-			"paragraph": "Du kommer att börja gråta",
-			"clickbait": true
+			"paragraph": "Du kommer att börja gråta"
 		},
 		{
 			"title": "Experten tipsar: Så bränner du fett bäst",
-			"paragraph": "Snabba resultat - \"Riktigt bra fettbrännare\"",
-			"clickbait": true
+			"paragraph": "Snabba resultat - \"Riktigt bra fettbrännare\""
 		},
 		{
 			"title": "Från tungviktare till totalt superfit",
-			"paragraph": "Salif vägde hela 167 kg Se hur han ser ut nu",
-			"clickbait": true
+			"paragraph": "Salif vägde hela 167 kg Se hur han ser ut nu"
 		},
 		{
 			"title": "Här avslöjas plötsligt ovanliga vänskapen",
-			"paragraph": "[TV] De lyckas charma alla: inte ett öga torrt",
-			"clickbait": true
+			"paragraph": "[TV] De lyckas charma alla: inte ett öga torrt"
 		},
 		{
 			"title": "Tricket: Så somnar du på 1 minut",
-			"paragraph": "Testa hyllade 4-7-8-metoden. Superenkelt",
-			"clickbait": true
+			"paragraph": "Testa hyllade 4-7-8-metoden. Superenkelt"
 		},
 		{
 			"title": "Sorry Kim, du är inte längre nummer 1",
-			"paragraph": "Gissa vem som nu är störst på Instagram!",
-			"clickbait": true
+			"paragraph": "Gissa vem som nu är störst på Instagram!"
 		},
 		{
 			"title": "Wow! Dolt från utsidan - drömhem på insidan",
-			"paragraph": "Arkitektparet byggde kamouflerat sommarhus på Gotland KOLLA INNE",
-			"clickbait": true
+			"paragraph": "Arkitektparet byggde kamouflerat sommarhus på Gotland KOLLA INNE"
 		},
 		{
 			"title": "Satsar hårt på att sälja det oväntade",
-			"paragraph": "[TV] Till saul: En liten burkfrån landet. \"Många är redo att bli lurade\"",
-			"clickbait": true
+			"paragraph": "[TV] Till saul: En liten burkfrån landet. \"Många är redo att bli lurade\""
 		},
 		{
 			"title": "Björnens utseende överraskar allihopa",
-			"paragraph": "[TV] Kameramannen fångar det annorlunda på film. \"Nämen, gud!\"",
-			"clickbait": true
+			"paragraph": "[TV] Kameramannen fångar det annorlunda på film. \"Nämen, gud!\""
 		},
 		{
 			"title": "Kaos i trafiken - då händer det fina",
@@ -56,6 +47,62 @@
 		{
 			"title": "Här hände det som borde vara omöjligt",
 			"paragraph": "[TV] Ingen på stranden kan tro sina ögon. Hur i världen gick det här till?"	
+		},
+		{
+			"title": "Förlorade armen – har oväntade jobbet",
+			"paragraph": "Gör det ingen trodde var möjligt: \"Fantastisk\""	
+		},
+		{
+			"title": "Leder med 7-0 - tar sitt livs värsta beslut",
+			"paragraph": "[TV] Uppladdningen han kommer få ångra för alltid: \"Vilken idiot\""	
+		},
+		{
+			"title": "Gravplundaren blir avslöjad av kameran",
+			"paragraph": "[TV] Filmas när hon gör det bisarra på kyrkogården"	
+		},
+		{
+			"title": "Ingen fattar något: \"Vem har bollen?\"",
+			"paragraph": "[TV] De försöker sig på galna varianten i verkligheten"
+		},
+		{
+			"title": "Enorma UFO-stenar förbryllar forskare",
+			"paragraph": "#ABMORGON TV Flera mystiska bumblingar har hittats i Ryssland"
+		},
+		{
+			"title": "Ertappar tjuven - på bar gärning",
+			"paragraph": "[TV BROTTSCENTRALEN Bilens ägare trodde inte sina ögon"
+		},
+		{
+			"title": "Tappar hakan när de ser vem som sjunger",
+			"paragraph": "[TV Magisk audition får den amerikanska stjärnjuryn att hoppa ur stolarna"
+		},
+		{
+			"title": "Ljusfenomenet som ingen kan förklara",
+			"paragraph": "[TV] #ABMORGON Här fångas det mystiska på film"	
+		},
+		{
+			"title": "Hårdrocksskivorna som kan göra dig rik",
+			"paragraph": "GUIDE: Här är skatterna bland lp-skivorna – hårdrocksexperten hjälper dig att identifiera dyrgriparna i skivsamlingen 50 000 kr"	
+		},
+		{
+			"title": "Varför har Oldsberg en halv båt på väggen?",
+			"paragraph": "Kika in hemma hos programledaren SE HÄR!"	
+		},
+		{
+			"title": "Kate Moss avslöjar bästa skönhetstipsen",
+			"paragraph": "Supermodellens hemliga tips för evig ungdom"
+		},
+		{
+			"title": "Äter glass varje dag – men har ändå gått ner",
+			"paragraph": "Jonas, 32: ”Jag har blivit av med 25 kilo"
+		},
+		{
+			"title": "Är detta hemligheten bakom viktnedgång?",
+			"paragraph": "Forskarnas upptäckt. Hjälpa överviktiga"
+		},
+		{
+			"title": "Tokkär – på 36 frågor",
+			"paragraph": "Ny test avslöjar om din dejt funkar"
 		}
 	],
 	"nonClickbait": [
@@ -98,6 +145,129 @@
 		{
 			"title": "Marwa berättar 'Därför är jag på flykt från Syrien",
 			"paragraph": "Aftonbladet träffade henne framför taggtråden vid stängda gränsen"	
+		},
+		{
+			"title": "JUST NU: Attack mot flygbas - flera döda",
+			"paragraph": "Beväpnade män attackerade flygbas i nordvästra Pakistan"	
+		},
+		{
+			"title": "Frontalkrockade - mc-förare död",
+			"paragraph": "Kom över på fel sida av vägen - krockade med bil: \"Vet inte varför\""	
+		},
+		{
+			"title": "Här är bilderna över fjällkedjan i rymden",
+			"paragraph": "Otroliga foton från Nasas rymdsondsläppta. Visar märkliga landskapet i solnedgång."	
+		},
+		{
+			"title": "\"Pengarna till barnens mat är snart slut...\"",
+			"paragraph": "STAFFAN LINDBERG Att inte ge krigets offer den mest grundläggande hjälpen är ett ofantligt svek."	
+		},
+		{
+			"title": "\"Pengarna till barnens mat är snart slut...\"",
+			"paragraph": "STAFFAN LINDBERG Att inte ge krigets offer den mest grundläggande hjälpen är ett ofantligt svek."	
+		},
+		{
+			"title": "Uppgifter: Släppte in en man med pistol",
+			"paragraph": "Full kaos inför U2-konserten i Globen. Polisen på jakt efter beväpnad man i publiken."	
+		},
+		{
+			"title": "Läkare höll kvinna fånge - i 'bunker'",
+			"paragraph": "[TV+TEXT] Kvinnan ska ha lurats eller tvingats in i rum \"rum inrett för att hålla någon fången\", enligt uppgifter. Polisen: \"Han greps i fredags\" "	
+		},
+		{
+			"title": "Toivonen slog till – mot City",
+			"paragraph": "Första målet i nya klubben. Alla resultat"
+		},
+		{
+			"title": "Zlatans måltorka över PARIS",
+			"paragraph": "aris Saint-Germain går in i en tuff höstperiod med sin svenske anfallare tillbaka…"
+		},
+		{
+			"title": "Bil i krock med lastbil på E4:an – trafiken avstängd",
+			"paragraph": "En person har förts till sjukhus"
+		},
+		{
+			"title": "#REFUGEESWELCOME",
+			"paragraph": "#REFUGEESWELCOME"
+		},
+		{
+			"title": "Bil i krock med lastbil på E4:an – trafiken avstängd",
+			"paragraph": ""
+		},
+		{
+			"title": "Den skottskadade mannen kan ha träffats av misstag",
+			"paragraph": ""
+		}, 
+		{
+			"title": "Greps 30 år efter våldtäktsmordet",
+			"paragraph": "Kristina Elman var 15 år när hon våldtogs och mördades."	
+		},
+		{
+			"title": "Bilderna avslöjar ryska insatsen i Syrien",
+			"paragraph": "Satellitbilderna avslöjar: Stridsplan, Soldater, Stridsvagnar"	
+		},
+		{
+			"title": "Hälsofarlig hudkräm återkallas",
+			"paragraph": "11 000 flaskor av Barnängens hudkräm kan vara hälsofarliga."	
+		},
+		{
+			"title": "Ronaldos fina gest↵till den lille pojken.",
+			"paragraph": "Sparkades ner på sin flykt från kriget – här uppfylls Zaids stora dröm"	
+		},
+		{
+			"title": "Har alla analsex?",
+			"paragraph": "Sexologen svarar på läsarfrågor"	
+		},
+		{
+			"title": "Wennerholm: Det finns inget bättre",
+			"paragraph": "PÅ PLATS: Det var mycket som imponerade hos HV71"	
+		},
+		{
+			"title": "Smartphonefritt VR",
+			"paragraph": "Headset på gång från Samsung"
+		},
+		{
+			"title": "Starbucks satsar stort!",
+			"paragraph": "På appbaserad beställning"
+		},
+		{
+			"title": "Toivonen slog till – mot City",
+			"paragraph": "Första målet i nya klubben. Alla resultat"
+		},
+		{
+			"title": "Nu är det enklare att blockera avsändare i Gmail",
+			"paragraph": ""
+		},
+		{
+			"title": "Instagram har nu 400 miljoner användare",
+			"paragraph": ""
+		},
+		{
+			"title": "Liv Tyler för gammal för Hollywood",
+			"paragraph": "HOLLYWOOD. Liv Tyler har fyllt 38. Det är tydligen för gammalt"
+		},
+		{
+			"title": "Bilderna avslöjar ryska insatsen i Syrien",
+			"paragraph": "[TV+TEXT] Satellitbilder avslöjar Vladimir Putins militära upprustning i Syrien"
+		},
+		{
+			"title": "Volkswagen stoppar försäljningen i USA",
+			"paragraph": "Volkswagen stoppar försäljningen av dieselbilar i USA"
+		},
+		{
+			"title": "111 fångar sköts ihjäl vid upplopp",
+			"paragraph": "73 poliser dömdes för mord – alla har jobbet kvar De blodigaste fångupproren i världen"
+		},
+		{
+			"title": "Mycket allvarligt säkerhetshål hittat i iOS 9",
+			"paragraph": ""
+		},
+		{
+			"title": "De döda barnen – som ingen saknar",
+			"paragraph": "Varje år hittas 12-15 oidentifierade döda barn i USA Pojken hittades i en låda på en ödetomt Baby Jane Flickan i ravinen"
+		},
+		{
+			
 		}
 	]
 	
