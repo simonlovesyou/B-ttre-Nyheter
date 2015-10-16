@@ -26,7 +26,7 @@ Pull requests are welcome!
 I cannot guarantee that every clickbait article will be filtered, and there may be some false positives. This will hopefully get more stable with time as the dataset of articles will become larger as I, or contributors, add them.
 
 ## License
-MIT (See LICENSE.txt)
+MIT (See LICENSE)
 
 ## Author
 **Github** [@simonlovesyou](https://github.com/simonlovesyou)
