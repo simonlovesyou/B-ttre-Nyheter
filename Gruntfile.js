@@ -78,8 +78,8 @@ module.exports = function(grunt) {
           stripComments: true
         },
         files: {
-          "chrome-plugin/assets/json/testData.min.json" : "testData.json",
-          "chrome-plugin/manifest.json": "manifest.json"
+          "chrome-plugin/assets/json/testData.min.json" : "modules/json/trainData.json",
+          "chrome-plugin/manifest.json": "modules/json/manifest.json"
         }
       }
     },
