@@ -1,5 +1,5 @@
 {
-  "name": "Bättre Afton",
+  "name": "B-ttre-Afton",
   "version": "0.0.1",
   "description": "Chrome extension for filtering clickbait articles.",
   "main": "modules/js/popup.js",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/simonlovesyou/B-ttre-Afton",
   "dependencies": {
+    "jquery": "^2.1.4",
     "natural": "^0.2.1"
   },
   "devDependencies": {
