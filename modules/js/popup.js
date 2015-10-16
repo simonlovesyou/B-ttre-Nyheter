@@ -1,5 +1,6 @@
 window.startExtension = function() {
-  var articles = document.querySelectorAll('article > a > h2');
+  var articles = $('article');
+  console.log($('article'));
   console.log("Found %s number of articles!", articles.length);
   var clickbaitCount = 0,
       articleCount = 0;
@@ -9,31 +10,33 @@ window.startExtension = function() {
   var filterPlus = true;
   var filterBait = true;
 
-  [].forEach.call(document.querySelectorAll('article > a'), function(v,i,a) {
-      if(v.className.indexOf('abTeaserImageLink-js') < 0 && v.className.indexOf('abStreamerSmall') < 0 && v.parentNode.className.indexOf('abItemHLine') < 0) {
-        console.log(v.textContent);
-        console.log(typeof window.isClickbait(v.textContent));
 
-        if(filterBait && window.isClickbait(v.textContent)) {
-          if(v.parentNode) {
+
+  articles.each(function(index) {
+    var article = $(this);
+
+    article.children().each(function(i) {
+      var a = $(this);
+      //abStreamSmall might be for PLUS articles
+      if(!a.hasClass('abTeaserImageLink-js') && !a.hasClass('abStreamerSmall') 
+                                             && !a.hasClass('abItemHLine')) {
+        var text = a.text().replace(/(\r\n|\n|\r)/gm, '');
+        if(text.indexOf('<img src') < 0) {
+          console.log("Valid article:");
+          console.log(a.text());
+          if(filterBait && window.isClickbait(text)) {
             clickbaitCount++;
-            clickbaitFiltered.push(v.textContent);
-            console.log(v.parentNode);
-            v.parentNode.parentNode.removeChild(v.parentNode);
+            clickbaitFiltered.push(text);
+            //article.remove();
+          } else {
+            articlesN.push(text);
+            articleCount++;
           }
-        } else {
-          articlesN.push(v.textContent);
-          articleCount++;
         }
-      } else {
-        console.log(v.getElementsByClassName());
       }
-
-
-      /*console.log(window.isClickbait);
-      console.log(v.textContent);
-      console.log(window.isClickbait(v.textContent));*/
+    });
   });
+
   console.log("%s of %s are clickbait. %s%", clickbaitCount, articles.length, (clickbaitCount/articles.length*100));
   console.log("Filtered articles:");
   console.log(clickbaitFiltered);
