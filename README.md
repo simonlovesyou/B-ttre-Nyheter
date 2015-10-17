@@ -23,9 +23,34 @@ I got tired of browsing Swedish news sites because of the ever increasing amount
  - List of the articles filtered and why
  - Restore article to the frontpage
 
-## Contribution
+## Build
 
-Pull requests are welcome!
+To build it onto your system:
+
+```
+git clone https://github.com/simonlovesyou/B-ttre-Nyheter.git MyClone
+```
+
+Navigate into 'MyClone', then run
+
+```
+npm install 
+```
+
+After your changes run:
+
+```
+grunt default
+```
+When you're satisifed with the result run 
+
+```
+grunt deploy
+```
+
+## Contributions
+
+Any help is welcomed. 
 
 ## Disclaimer
 I cannot guarantee that every clickbait article will be filtered, and there may be some false positives. This will hopefully get more stable with time as the dataset of articles will become larger as I, or contributors, add them.
