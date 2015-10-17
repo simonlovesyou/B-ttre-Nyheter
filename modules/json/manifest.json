@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Bättre Nyheter",
-  "version": "1.0.0",
+  "version": "1.0.12",
 
-  "description": "Gör Aftonbladet.se till en bättre nyhetssida.",
+  "description": "Gör Svenska nyhetssiter mer användarvänliga.",
 
   "options_ui": {
     "page": "popup.html",
@@ -23,7 +23,7 @@
   "permissions": [
     "activeTab",
     "storage",
-    "http://www.aftonbladet.se/"
+    "*://*.aftonbladet.se/"
   ],
   "web_accessible_resources": [
     "assets/js/inject.min.js",
