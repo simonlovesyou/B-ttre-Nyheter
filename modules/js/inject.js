@@ -49,8 +49,8 @@ window.startExtension = function() {
             paragraph += p;//p ? p : '';
           });
           if(header && paragraph) {
-            console.log("Header: '%s'", header);
-            console.log("paragraph: '%s'", paragraph);
+            console.log("Header: '%s': %s", header, window.headerBait(header));
+            console.log("paragraph: '%s': %s", paragraph, window.paraBait(paragraph));
             if(filterPlus) {
               if(paragraph.indexOf('PLUS') >= 0) {
                 plus.push([header, paragraph]);
