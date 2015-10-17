@@ -17,6 +17,11 @@ It does this by using [Bayes Classifiers](https://en.wikipedia.org/wiki/Bayes_cl
 ## Motivation
 I got tired of browsing Swedish news sites because of the ever increasing amount of clickbait articles on these sites, and to battle this new era of "reporting" I wrote this chrome-extension
 
+## Coming Features
+
+ - Custom filters (You don't follow Idol? Or don't care for Paradise Hotel?)
+ - List of the articles filtered and why
+ - Restore article to the frontpage
 
 ## Contribution
 
