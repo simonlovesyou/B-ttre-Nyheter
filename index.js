@@ -8,6 +8,14 @@ window.isClickbait = function(header, paragraph) {
   return (classifierHeadline.classify(header) === 'true' && classifierParagraph.classify(paragraph) === 'true');
 }
 
+window.headerBait = function(header) {
+  return (classifierHeadline.classify(header) === 'true');
+}
+
+window.paraBait = function(para) {
+  return (classifierParagraph.classify(para) === 'true');
+}
+
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
   if(xhr.readyState === 4 && xhr.status === 200) {
