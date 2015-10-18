@@ -143,6 +143,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compress');
 
   //grunt.task.requires()
-  grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat', 'uglify', 'clean:bundle', 'watch']);
+  grunt.registerTask('default', ['jade:debug', 'jade:release', 'browserify:extension', 'concat', 'uglify', 'jsonmin', 'clean:bundle', 'watch']);
   grunt.registerTask('deploy', ['jade:release', 'browserify:extension', 'concat', 'uglify', 'cssmin:main', 'jsonmin:extension', 'clean', 'compress']);
 };
